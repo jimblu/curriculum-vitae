@@ -1,3 +1,14 @@
-.col-lg-12{
+.container-fluid{
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+
+#left{
+    height: 100vh;
+    background-color: aquamarine;
+}
+}
+.col-lg-6{
     background-color: rgba(255, 67, 81, 0.73);
 }
