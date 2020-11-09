@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+}
+.nav{
+    background-color: rgba(255, 67, 81, 0.73);
+    display: flex;
+    flex-direction: column;
+    width: 29vw;
+    .photo{
+        img{
+            border: 5px solid rgba(255, 255, 255, 0.87);
+            box-sizing: border-box;
+            border-radius: 100px;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 142px;
+            left: 106px;
+        }
+    }
+    .navBar{
+        position: relative;
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 370px;
+            left: 80px;
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style: none;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 23px;
+                line-height: 28px;
+                color: #FFFFFF;
+                margin: 5px;
+                padding: 10px;
+                border-radius: 33.5px;
+                width: 160px;
+                height: 67px;
+                z-index: 1;
+                transition: background-color 250ms;
+                cursor: pointer;
+                &:hover{
+                    background-color:rgba(255, 255, 255, 0.11);
+                }
+                &:active{
+                    background-color: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 67, 81, 0.35);
+                }
+            }
+        }
+    }
+}
+main{
+    width: 71vw;
+}
+section{
+    height: 100vh;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .bigName{
+        display: flex;
+        position: absolute;
+        left: 60px;
+        top: 230px;
+        .jimmy{
+            font-family: Montserrat;
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 85px;
+            letter-spacing: -0.07em;   
+            color: rgba(0, 0, 0, 0.7);    
+        }
+        .pez{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 85px;
+            letter-spacing: -0.07em;
+            color: rgba(255, 67, 81, 0.73);
+        }
+    }
+}
+.about{
+    position: relative;
+    h2{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: -0.07em;
+        color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        left: 60px;
+        top: 300px;
+    }
+    .presentation{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;    
+        color: rgba(0, 0, 0, 0.45);
+        position: absolute;
+        top: 398px;
+        left: 110px;
+        max-width: 800px;
+    }
+    .socialMediaContainer{
+        display: flex;
+        position: absolute;
+        top: 510px;
+        left: 110px;
+        img{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+    }
+}
+.experience{
+
+}
+.education{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: -0.05em;
+        color: rgba(255, 67, 81, 0.73);
+    }
+    .event{
+        .eventDate{
+            display: flex;
+            justify-content: space-between;
+            h4{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: -0.05em;
+                color: rgba(0, 0, 0, 0.7);      
+            }  
+        }
+        h5{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: -0.05em;
+            color: rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+        }
+        .description{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.05em;
+            color: rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            line-height: 1.5;
+        }
+    }
+}
+.skills{
+
+}
+.interests{
+    h3{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: -0.05em;
+        color: rgba(255, 67, 81, 0.73);
+        padding-bottom: 33px;
+    }
+    .myInterests{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.05em;
+        color: rgba(0, 0, 0, 0.5);
+        line-height: 1.5;
+        max-width: 800px;
+    }
+}
