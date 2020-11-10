@@ -6,7 +6,8 @@
   "scripts": {
     "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/",
     "sass": "sass --watch ./style/style.scss:./style/style.css --style compressed",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parcel": "parcel-bundler watch index.html"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,6 @@
     "postcss": "^8.1.6",
     "postcss-cli": "^8.2.0",
     "sass": "^1.29.0"
-  }
+  },
+  "dependencies": {}
 }
