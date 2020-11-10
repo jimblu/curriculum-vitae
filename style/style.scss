@@ -37,7 +37,7 @@ body{
           display: none;  
         }
     }
-    .navBar{
+    .navBar{   
         @media only screen and (max-device-width: 768px)
         {
             min-height: 80px;
@@ -168,6 +168,61 @@ section{
     {
         
     }
+    h3{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: -0.05em;
+        color: rgba(255, 67, 81, 0.73);
+    }
+    .event{
+        background-color: red;
+        @media only screen and (max-device-width: 768px)
+        {
+            padding: 0;
+            min-width: 350px;
+        }
+        .eventDate{
+            display: flex;
+            justify-content: space-between;
+            background-color: forestgreen;
+            h4{
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: -0.05em;
+                color: rgba(0, 0, 0, 0.7);  
+                background-color: hotpink;    
+            }  
+        }
+        h5{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            letter-spacing: -0.05em;
+            color: rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            background-color: yellow;
+        }
+        .description{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.05em;
+            color: rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            line-height: 1.5;
+            background-color: teal;
+        }
+    }
 }
 .about{
     position: relative;
@@ -295,51 +350,6 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    h3{
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 30px;
-        line-height: 37px;
-        letter-spacing: -0.05em;
-        color: rgba(255, 67, 81, 0.73);
-    }
-    .event{
-        .eventDate{
-            display: flex;
-            justify-content: space-between;
-            h4{
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 20px;
-                line-height: 24px;
-                letter-spacing: -0.05em;
-                color: rgba(0, 0, 0, 0.7);      
-            }  
-        }
-        h5{
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 15px;
-            line-height: 18px;
-            letter-spacing: -0.05em;
-            color: rgba(0, 0, 0, 0.5);
-            max-width: 800px;
-        }
-        .description{
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 20px;
-            letter-spacing: -0.05em;
-            color: rgba(0, 0, 0, 0.5);
-            max-width: 800px;
-            line-height: 1.5;
-        }
-    }
 }
 .skills{
 
