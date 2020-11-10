@@ -11,6 +11,7 @@ const skillsBtn = document.querySelector('.skillsBtn');
 const interestsBtn = document.querySelector('.interestsBtn');
 
 const burger = document.querySelector('.burger');
+const dropDown = document.querySelector('.list');
 
 const scrollPage = (btn, element) => {
 btn.addEventListener('click', () => {
@@ -25,4 +26,7 @@ scrollPage(interestsBtn, interests);
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active');
+});
+burger.addEventListener('click', () => {
+    dropDown.classList.toggle('active');
 });

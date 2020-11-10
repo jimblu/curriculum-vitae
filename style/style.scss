@@ -21,7 +21,7 @@ body{
     @media only screen and (max-device-width: 768px)
     {
         width: 100vw;
-        height: 10vh;
+        height: auto;
         flex-direction: column-reverse;
     }
     .photo{
@@ -38,11 +38,19 @@ body{
         }
     }
     .navBar{
-        background-color: yellowgreen;
+        @media only screen and (max-device-width: 768px)
+        {
+            min-height: 80px;
+        }
         ul{
             display: flex;
             flex-direction: column;
             padding-right: 40px;
+            height: 50vh;
+            &.active{
+                display: block;
+                height: 100vh;
+            }
             @media only screen and (max-device-width: 768px)
             {
                 display: none;
@@ -67,7 +75,8 @@ body{
                 cursor: pointer;
                 @media only screen and (max-device-width: 768px)
                 {
-
+                    height: 20vh;
+                    width: 100vw;
                 }
                 &:hover{
                     background-color:rgba(255, 255, 255, 0.11);
