@@ -93,8 +93,8 @@ body{
 //Burger button
 .burger{
     position: fixed;
-    top: 4vh;
-    left: 80vw;
+    top: 35px;
+    left: 85vw;
     display: none;
     background-color: #FFF;
     width: 43px;
@@ -105,6 +105,10 @@ body{
     @media only screen and (max-device-width: 768px)
     {
       display: block;
+    }
+    @media only screen and (max-device-width: 470px)
+    {
+        left: 80vw;
     }
     &::before{
         content: "";
@@ -150,6 +154,7 @@ body{
         }
     }
 }
+//end burger button
 main{
     width: 71vw;
     padding-left: 29vw;
@@ -182,7 +187,7 @@ section{
         @media only screen and (max-device-width: 768px)
         {
             padding: 0;
-            min-width: 350px;
+            min-width: 95vw;
         }
         .eventDate{
             display: flex;
@@ -221,6 +226,11 @@ section{
             max-width: 800px;
             line-height: 1.5;
             background-color: teal;
+            @media only screen and (max-device-width: 374px)
+            {
+                font-weight: 500;
+                font-size: 15px;
+            }
         }
     }
 }
@@ -231,6 +241,18 @@ section{
         position: absolute;
         left: 60px;
         top: 170px;
+        @media only screen and (max-device-width: 470px)
+        {
+            top: 120px;
+        } 
+        @media only screen and (max-device-width: 375px)
+        {
+            top: 90px;
+        }
+        @media only screen and (max-device-width: 374px)
+        {
+            top: 80px;
+        }
         .jimmy{
             font-family: Montserrat;
             font-weight: 800;
@@ -240,8 +262,12 @@ section{
             color: rgba(0, 0, 0, 0.7);
             @media only screen and (max-device-width: 768px)
             {
-                font-size: 50px;
+                font-size: 75px;
             }
+            @media only screen and (max-device-width: 470px)
+            {
+                font-size: 50px;
+            }  
             @media only screen and (max-device-width: 374px)
             {
                 font-size: 40px;
@@ -257,8 +283,12 @@ section{
             color: rgba(255, 67, 81, 0.73);
             @media only screen and (max-device-width: 768px)
             {
-                font-size: 50px;
+                font-size: 75px;
             }
+            @media only screen and (max-device-width: 470px)
+            {
+                font-size: 50px;
+            }  
             @media only screen and (max-device-width: 374px)
             {
                 font-size: 40px;
@@ -282,14 +312,21 @@ section{
         top: 270px;
         @media only screen and (max-device-width: 768px)
         {
-           font-size: 20px; 
-           width: 290px;
+           font-size: 25px; 
+           width: 400px;
+           top: 280px;
         }
+        @media only screen and (max-device-width: 470px)
+        {
+            font-size: 20px; 
+            width: 290px;
+            top: 210px;
+        } 
         @media only screen and (max-device-width: 374px)
         {
             font-size: 14px;
             width: 205px;
-            top: 250px;
+            top: 160px;
             left: 38px;
         } 
     }
@@ -309,12 +346,17 @@ section{
            font-size: 18px;
            top: 350px;
            left: 70px;
+           width: 400px;
+        }
+        @media only screen and (max-device-width: 470px)
+        {
            width: 300px;
+           top: 265px;
         }
         @media only screen and (max-device-width: 374px)
         {
            font-size: 15px;
-           top: 350px;
+           top: 230px;
            left: 30px;
            width: 250px;
         }
@@ -337,9 +379,14 @@ section{
         {
             left: 70px;
         }
+        @media only screen and (max-device-width: 375px)
+        {
+            top: 440px;
+        }
         @media only screen and (max-device-width: 374px)
         {
             left: 30px;
+            top: 400px;
         }
     }
 }
