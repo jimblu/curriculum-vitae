@@ -17,10 +17,11 @@ body{
     width: 29vw;
     height: 100vh;
     position: fixed;
+    z-index: 4;
     @media only screen and (max-device-width: 768px)
     {
         width: 100vw;
-        height: 100vw;
+        height: 10vh;
         flex-direction: column-reverse;
     }
     .photo{
@@ -37,13 +38,14 @@ body{
         }
     }
     .navBar{
+        background-color: yellowgreen;
         ul{
             display: flex;
             flex-direction: column;
-            padding-right: 30px;
+            padding-right: 40px;
             @media only screen and (max-device-width: 768px)
             {
-                
+                display: none;
             }
             li{
                 display: flex;
@@ -62,7 +64,6 @@ body{
                 z-index: 1;
                 transition: background-color 300ms;
                 border: 1px solid transparent;
-                background-color: violet;
                 cursor: pointer;
                 @media only screen and (max-device-width: 768px)
                 {
@@ -82,15 +83,16 @@ body{
 }
 //Burger button
 .burger{
-    position: relative;
-    top: 2vh;
-    left: 0vw;
+    position: fixed;
+    top: 4vh;
+    left: 80vw;
     display: none;
     background-color: #FFF;
     width: 43px;
     height: 10px;
     border-radius: 19.5px;
     transition: 250ms ease-in-out;
+    z-index: 5;
     @media only screen and (max-device-width: 768px)
     {
       display: block;
@@ -178,7 +180,7 @@ section{
             }
             @media only screen and (max-device-width: 374px)
             {
-                font-size: 30px;
+                font-size: 40px;
             }   
         }
         .pez{
@@ -195,9 +197,13 @@ section{
             }
             @media only screen and (max-device-width: 374px)
             {
-                font-size: 30px;
+                font-size: 40px;
             } 
         }
+        @media only screen and (max-device-width: 374px)
+        {
+            left: 38px;
+        } 
     }
     h2{
         font-family: Montserrat;
@@ -218,8 +224,9 @@ section{
         @media only screen and (max-device-width: 374px)
         {
             font-size: 14px;
-            background-color: turquoise;
             width: 205px;
+            top: 250px;
+            left: 38px;
         } 
     }
     .presentation{
@@ -245,7 +252,7 @@ section{
            font-size: 15px;
            top: 350px;
            left: 30px;
-           width: 300px;
+           width: 250px;
         }
     }
     .socialMediaContainer{
@@ -255,7 +262,6 @@ section{
         left: 110px;
         width: auto;
         height: auto;
-        background-color: yellowgreen;
         a{
             img{
                 width: 50px;
@@ -263,9 +269,14 @@ section{
                 margin: 5px;
             }
         }
-    }
-    @media only screen and (max-device-width: 768px)
-    {
+        @media only screen and (max-device-width: 768px)
+        {
+            left: 70px;
+        }
+        @media only screen and (max-device-width: 374px)
+        {
+            left: 30px;
+        }
     }
 }
 .experience{
