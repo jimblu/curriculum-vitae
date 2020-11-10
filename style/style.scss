@@ -153,7 +153,7 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media only screen and (max-device-width: 768px)
+    @media only screen and (max-device-width: 374px)
     {
         
     }
@@ -175,7 +175,11 @@ section{
             @media only screen and (max-device-width: 768px)
             {
                 font-size: 50px;
-            }  
+            }
+            @media only screen and (max-device-width: 374px)
+            {
+                font-size: 30px;
+            }   
         }
         .pez{
             font-family: Montserrat;
@@ -189,6 +193,10 @@ section{
             {
                 font-size: 50px;
             }
+            @media only screen and (max-device-width: 374px)
+            {
+                font-size: 30px;
+            } 
         }
     }
     h2{
@@ -207,6 +215,12 @@ section{
            font-size: 20px; 
            width: 290px;
         }
+        @media only screen and (max-device-width: 374px)
+        {
+            font-size: 14px;
+            background-color: turquoise;
+            width: 205px;
+        } 
     }
     .presentation{
         font-family: Montserrat;
@@ -226,12 +240,22 @@ section{
            left: 70px;
            width: 300px;
         }
+        @media only screen and (max-device-width: 374px)
+        {
+           font-size: 15px;
+           top: 350px;
+           left: 30px;
+           width: 300px;
+        }
     }
     .socialMediaContainer{
         display: flex;
         position: absolute;
         top: 510px;
         left: 110px;
+        width: auto;
+        height: auto;
+        background-color: yellowgreen;
         a{
             img{
                 width: 50px;
@@ -239,6 +263,9 @@ section{
                 margin: 5px;
             }
         }
+    }
+    @media only screen and (max-device-width: 768px)
+    {
     }
 }
 .experience{
