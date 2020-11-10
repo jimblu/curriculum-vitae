@@ -2,14 +2,27 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     display: flex;
+    @media only screen and (max-device-width: 768px)
+    {
+    flex-direction: column;
+    }
 }
 .nav{
     background-color: rgba(255, 67, 81, 0.73);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 29vw;
+    height: 100vh;
+    position: fixed;
+    @media only screen and (max-device-width: 768px)
+    {
+        position: static;
+        width: 100vw;
+        height: 30vw;
+    }
     .photo{
         img{
             border: 5px solid rgba(255, 255, 255, 0.87);
@@ -17,20 +30,21 @@ body{
             border-radius: 100px;
             width: 200px;
             height: 200px;
-            position: absolute;
-            top: 142px;
-            left: 106px;
+        }
+        @media only screen and (max-device-width: 768px)
+        {
+          display: none;  
         }
     }
     .navBar{
-        position: relative;
         ul{
             display: flex;
             flex-direction: column;
-            align-items: center;
-            position: absolute;
-            top: 370px;
-            left: 80px;
+            padding-right: 30px;
+            @media only screen and (max-device-width: 768px)
+            {
+                
+            }
             li{
                 display: flex;
                 align-items: center;
@@ -42,16 +56,16 @@ body{
                 font-size: 23px;
                 line-height: 28px;
                 color: #FFFFFF;
-                margin: 5px;
-                padding: 10px;
                 border-radius: 33.5px;
                 width: 160px;
                 height: 67px;
                 z-index: 1;
-                transition: background-color 250ms;
+                transition: background-color 300ms;
+                border: 1px solid transparent;
                 cursor: pointer;
                 &:hover{
                     background-color:rgba(255, 255, 255, 0.11);
+                    border: 1px solid rgba(255, 255, 255, 0.11);
                 }
                 &:active{
                     background-color: rgba(255, 255, 255, 0.05);
@@ -63,18 +77,22 @@ body{
 }
 main{
     width: 71vw;
+    padding-left: 29vw;
 }
 section{
     height: 100vh;
-    padding: 5%;
+    padding: 0 5% 0 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.about{
+    position: relative;
     .bigName{
         display: flex;
         position: absolute;
         left: 60px;
-        top: 230px;
+        top: 170px;
         .jimmy{
             font-family: Montserrat;
             font-weight: 800;
@@ -93,20 +111,17 @@ section{
             color: rgba(255, 67, 81, 0.73);
         }
     }
-}
-.about{
-    position: relative;
     h2{
         font-family: Montserrat;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 30px;
         line-height: 37px;
         letter-spacing: -0.07em;
         color: rgba(0, 0, 0, 0.7);
         position: absolute;
         left: 60px;
-        top: 300px;
+        top: 270px;
     }
     .presentation{
         font-family: Montserrat;
