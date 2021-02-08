@@ -11,5 +11,5 @@ In this project, I coded my resume.
 ### Built With
 
 * HTML
-* CSS
+* SCSS/CSS
 * Native javascript
