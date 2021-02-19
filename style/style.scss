@@ -84,6 +84,38 @@ body {
     }
   }
 }
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 28px;
+  color: #ffffff;
+  border-radius: 33.5px;
+  width: 160px;
+  height: 67px;
+  z-index: 2;
+  transition: background-color 300ms;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  @media only screen and (max-device-width: 768px) {
+    height: 20vh;
+    width: 100vw;
+  }
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.11);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+  }
+  &:active {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 67, 81, 0.35);
+  }
+}
 //Burger button
 .burger {
   position: fixed;
@@ -180,7 +212,7 @@ section {
     .eventDate {
       display: flex;
       justify-content: space-between;
-      //background-color: forestgreen;
+      margin-bottom: -40px;
       h4 {
         font-family: Montserrat;
         font-style: normal;
@@ -201,7 +233,6 @@ section {
       letter-spacing: -0.05em;
       color: rgba(0, 0, 0, 0.5);
       max-width: 800px;
-      //background-color: yellow;
     }
     .description {
       font-family: Montserrat;
@@ -317,6 +348,24 @@ section {
     top: 398px;
     left: 110px;
     max-width: 800px;
+    .portfolioLink {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+      color: rgba(0, 0, 0, 0.45);
+      top: 398px;
+      left: 110px;
+      max-width: 800px;
+      display: inline;
+
+      transition: 0.3s;
+      &:hover {
+        color: rgba(255, 67, 81, 0.8);
+        text-decoration: none;
+      }
+    }
     @media only screen and (max-device-width: 768px) {
       font-size: 18px;
       top: 350px;
@@ -341,11 +390,18 @@ section {
     left: 110px;
     width: auto;
     height: auto;
+    margin-top: 15px;
     a {
       img {
         width: 50px;
         height: 50px;
         margin: 5px;
+        border-radius: 50%;
+        transition: 0.3s;
+        &:hover {
+          background-color: rgba(255, 67, 81, 0.73);
+          transform: translateY(-2px);
+        }
       }
     }
     @media only screen and (max-device-width: 768px) {
@@ -384,6 +440,21 @@ section {
     color: rgba(0, 0, 0, 0.5);
     max-width: 800px;
   }
+  .listSkillsTech {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.imgSkills {
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  transition: 0.3s;
+  &:hover {
+    transform: translateY(-3px);
+  }
 }
 .interests {
   //background-color: khaki;
@@ -408,6 +479,8 @@ section {
     color: rgba(0, 0, 0, 0.5);
     line-height: 1.5;
     max-width: 800px;
+    text-indent: 5%;
+    text-align: justify;
   }
 }
 
@@ -421,8 +494,24 @@ li {
   color: rgba(0, 0, 0, 0.5);
   max-width: 800px;
   line-height: 1.5;
+  text-align: justify;
+  text-transform: none;
 }
 h5,
 h4 {
   text-transform: uppercase;
+}
+a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.05em;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  &:hover {
+    color: rgba(255, 67, 81, 0.8);
+    text-decoration: none;
+  }
 }

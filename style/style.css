@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,8 +12,8 @@ body {
   body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -24,14 +24,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 29vw;
   height: 100vh;
   position: fixed;
@@ -44,15 +44,15 @@ body {
     height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
 .nav .photo img {
   border: 5px solid rgba(255, 255, 255, 0.87);
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 100px;
   width: 200px;
   height: 200px;
@@ -76,8 +76,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-right: 40px;
   height: 50vh;
 }
@@ -98,11 +98,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
   font-family: Montserrat;
   font-style: normal;
@@ -133,6 +133,51 @@ body {
 }
 
 .nav .navBar ul li:active {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 67, 81, 0.35);
+}
+
+.navLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 28px;
+  color: #ffffff;
+  border-radius: 33.5px;
+  width: 160px;
+  height: 67px;
+  z-index: 2;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .navLink {
+    height: 20vh;
+    width: 100vw;
+  }
+}
+
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.navLink:active {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 67, 81, 0.35);
 }
@@ -204,7 +249,7 @@ body {
   border-radius: 19.5px;
   top: 110%;
   -webkit-transform: translateY(-110%) rotate(45deg);
-  transform: translateY(-110%) rotate(45deg);
+          transform: translateY(-110%) rotate(45deg);
 }
 
 .burger.active::after {
@@ -216,7 +261,7 @@ body {
   border-radius: 19.5px;
   top: -110%;
   -webkit-transform: translateY(110%) rotate(-45deg);
-  transform: translateY(110%) rotate(-45deg);
+          transform: translateY(110%) rotate(-45deg);
 }
 
 main {
@@ -237,11 +282,11 @@ section {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section h3 {
@@ -266,8 +311,9 @@ section .event .eventDate {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: -40px;
 }
 
 section .event .eventDate h4 {
@@ -454,6 +500,26 @@ section .event .description {
   max-width: 800px;
 }
 
+.about .presentation .portfolioLink {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.45);
+  top: 398px;
+  left: 110px;
+  max-width: 800px;
+  display: inline;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about .presentation .portfolioLink:hover {
+  color: rgba(255, 67, 81, 0.8);
+  text-decoration: none;
+}
+
 @media only screen and (max-device-width: 768px) {
   .about .presentation {
     font-size: 18px;
@@ -488,12 +554,22 @@ section .event .description {
   left: 110px;
   width: auto;
   height: auto;
+  margin-top: 15px;
 }
 
 .about .socialMediaContainer a img {
   width: 50px;
   height: 50px;
   margin: 5px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.about .socialMediaContainer a img:hover {
+  background-color: rgba(255, 67, 81, 0.73);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -525,11 +601,11 @@ section .event .description {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: auto;
 }
 
@@ -546,6 +622,31 @@ section .event .description {
   letter-spacing: -0.05em;
   color: rgba(0, 0, 0, 0.5);
   max-width: 800px;
+}
+
+.skills .listSkillsTech {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.imgSkills {
+  width: 30px;
+  height: 30px;
+  margin: 2px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.imgSkills:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .interests {
@@ -573,6 +674,8 @@ section .event .description {
   color: rgba(0, 0, 0, 0.5);
   line-height: 1.5;
   max-width: 800px;
+  text-indent: 5%;
+  text-align: justify;
 }
 
 li {
@@ -585,10 +688,28 @@ li {
   color: rgba(0, 0, 0, 0.5);
   max-width: 800px;
   line-height: 1.5;
+  text-align: justify;
+  text-transform: none;
 }
 
 h5,
 h4 {
   text-transform: uppercase;
+}
+
+a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.05em;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+}
+
+a:hover {
+  color: rgba(255, 67, 81, 0.8);
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
