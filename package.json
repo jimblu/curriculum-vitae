@@ -7,7 +7,8 @@
     "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/",
     "sass": "sass --watch ./style/style.scss:./style/style.css --style compressed",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "parcel": "parcel-bundler watch index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -22,12 +23,8 @@
   },
   "homepage": "https://github.com/jimblu/curriculum-vitae#readme",
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "cssnano": "^4.1.10",
-    "postcss": "^8.1.6",
-    "postcss-cli": "^8.2.0",
     "sass": "^1.29.0"
   },
   "dependencies": {
