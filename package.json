@@ -1,11 +1,18 @@
 {
   "name": "curriculum-vitae",
   "version": "1.0.0",
-  "description": "",
+  "description": "<!-- ABOUT THE PROJECT --> ## About The Project",
   "main": "index.js",
+  "dependencies": {
+    "@swup/slide-theme": "^1.0.5",
+    "swup": "^2.0.14"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "parcel": "^1.12.4"
+  },
   "scripts": {
-    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/",
-    "sass": "sass --watch ./style/style.scss:./style/style.css --style compressed",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel index.html",
     "build": "parcel build index.html"
@@ -14,21 +21,10 @@
     "type": "git",
     "url": "git+https://github.com/jimblu/curriculum-vitae.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/jimblu/curriculum-vitae/issues"
   },
-  "homepage": "https://github.com/jimblu/curriculum-vitae#readme",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "sass": "^1.29.0"
-  },
-  "dependencies": {
-    "@swup/slide-theme": "^1.0.5",
-    "swup": "^2.0.14"
-  }
+  "homepage": "https://github.com/jimblu/curriculum-vitae#readme"
 }
